@@ -1,9 +1,10 @@
-pragma solidity =0.5.16;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
 import './interfaces/IUniswapV2ERC20.sol';
 import './libraries/SafeMath.sol';
 
-contract UniswapV2ERC20 is IUniswapV2ERC20 {
+contract UniswapV2ERC20 {
     using SafeMath for uint;
 
     string public constant name = 'Uniswap V2';
@@ -21,10 +22,10 @@ contract UniswapV2ERC20 is IUniswapV2ERC20 {
     event Approval(address indexed owner, address indexed spender, uint value);
     event Transfer(address indexed from, address indexed to, uint value);
 
-    constructor() public {
+    constructor() {
         uint chainId;
         assembly {
-            chainId := chainid
+            chainId := chainid()
         }
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(
