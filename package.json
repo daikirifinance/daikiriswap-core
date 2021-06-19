@@ -1,11 +1,11 @@
 {
-  "name": "@daikiri/core",
+  "name": "@daikiri/daikiriswap-core",
   "description": "🎛 Core contracts for the DaikiriSwap protocol",
   "version": "1.0.0",
   "homepage": "https://daikiri.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DaikiriFinance/daikiriswap-core"
+    "url": "git+https://github.com/DaikiriFinance/daikiriswap-core.git"
   },
   "keywords": [
     "uniswap",
@@ -47,5 +47,14 @@
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/DaikiriFinance/daikiriswap-core/issues"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "author": ""
 }
