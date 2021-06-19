@@ -1,4 +1,4 @@
-# Uniswap V2
+# DaikiriSwap
 
 [![Actions Status](https://github.com/DaikiriFinance/daikiriswap-core/workflows/CI/badge.svg)](https://github.com/DaikiriFinance/daikiriswap-core/actions)
 [![Version](https://img.shields.io/npm/v/@daikiri/daikiriswap-core)](https://www.npmjs.com/package/@daikiri/daikiriswap-core)
